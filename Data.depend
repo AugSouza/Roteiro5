@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1503584418 source:/home/aluno/Downloads/Data/src/Data.cpp
+	"Data.h"
+	<iostream>
+
+1503583374 /home/aluno/Downloads/Data/include/Data.h
+
+1503583545 source:/home/aluno/Downloads/Data/main.cpp
+	<iostream>
+	"Data.h"
+
