@@ -1,8 +1,9 @@
-#ifndef Invoice_h
-#define Invoice_h
+#ifndef INVOICE_H
+#define INVOICE_H
 #include <string>
 
 using namespace std;
+
 
 class Invoice
 {
@@ -13,7 +14,9 @@ class Invoice
         string descricao;
 
         Invoice(int,int,float,string);
-        float InvoiceAmount(int, float);
+        float InvoiceAmount(int,float);
 };
+
+
 
 #endif
