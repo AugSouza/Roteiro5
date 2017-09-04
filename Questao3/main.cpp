@@ -50,19 +50,5 @@ int main()
     << empregado2.getSalario() << " para:\tR$ " << (empregado2.getSalario()+ empregado2.getSalario() * 0.1) << endl;
 
 
-
-    empregado1.getSalario() + empregado1.getSalario() * 0.1;
-
-
-
-
-
-
-
-
-
-
-
-
     return 0;
 }
