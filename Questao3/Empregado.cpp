@@ -13,10 +13,14 @@ void Empregado::setSobrenome(string sobrenome)
 
 void Empregado::setSalario(float salario)
 {
-    this -> salario = salario;
-
     if(salario < 0)
+    {
         salario = 0;
+        this -> salario = salario;
+    }else
+        this -> salario = salario;
+
+
 }
 
 string Empregado::getNome()
