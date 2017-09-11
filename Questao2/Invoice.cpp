@@ -5,13 +5,53 @@ using namespace std;
 
 Invoice::Invoice(int numero, int quantidade, float preco, string descricao)
 {
+    setNumero(numero);
+    setQuantidade(quantidade);
+    setPreco(preco);
+    setDescricao(descricao);
+}
+
+void Invoice::setNumero(int numero)
+{
     this -> numero = numero;
+}
+
+void Invoice::setQuantidade(int quantidade)
+{
     this -> quantidade = quantidade;
+}
+
+void Invoice::setPreco(float preco)
+{
     this -> preco = preco;
+}
+
+void Invoice::setDescricao(string descricao)
+{
     this -> descricao = descricao;
 }
 
-float Invoice::InvoiceAmount(int quantidade, float preco)
+int Invoice::getNumero()
+{
+    return numero;
+}
+
+int Invoice::getQuantidade()
+{
+    return quantidade;
+}
+
+float Invoice::getPreco()
+{
+    return preco;
+}
+
+string Invoice::getDescricao()
+{
+    return descricao;
+}
+
+ float Invoice::InvoiceAmount(int quantidade, float preco)
 {
     if (quantidade < 0)
         quantidade = 0;
@@ -20,3 +60,4 @@ float Invoice::InvoiceAmount(int quantidade, float preco)
 
     return (float)quantidade*preco;
 }
+
