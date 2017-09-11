@@ -1,16 +1,29 @@
 #ifndef DATA_H
 #define DATA_H
 
+using namespace std;
+
 
 class Data
 {
-    public:
+    private:
         int dia;
         int mes;
         int ano;
-        Data();
-        virtual ~Data();
+
+    public:
+        Data(int,int,int);
+
+        void setDia(int);
+        void setMes(int);
+        void setAno(int);
+
+        int getDia();
+        int getMes();
+        int getAno();
+
         void avancarDia();
+
 };
 
-#endif // DATA_H
+#endif
