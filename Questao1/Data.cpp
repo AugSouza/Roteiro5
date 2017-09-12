@@ -63,7 +63,7 @@ int Data::getAno()
 
 void Data::avancarDia(){
 
-    /*if(mes == 2){
+    if(mes == 2){
         if(dia > 28){
         cout << "Dia incorreto, digite novamente!" <<endl;
         }
@@ -80,7 +80,6 @@ void Data::avancarDia(){
             if(dia == 30){
                 dia = 1;
                 mes++;
-
             }
             else{
                 dia++;
@@ -100,23 +99,7 @@ void Data::avancarDia(){
             }
             else{
                 dia++;
-            }*/
-
-    if(dia >= 1 && dia < 31)
-        dia++;
-        else
-            if(dia == 31 && (mes >= 1 && mes < 12))
-            {
-                dia = 1;
-                mes++;
             }
-            else if(mes == 12)
-                {
-                    mes = 1;
-                    ano++;
-                    dia = 1;
-                }
 
     cout << "" << dia << "/" << mes << "" << "/" << ano << endl;
 }
-

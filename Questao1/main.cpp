@@ -3,8 +3,7 @@
 
 using namespace std;
 
-int main()
-{
+int main(){
     Data x = Data(0,0,0);
     int aux;
 
@@ -20,13 +19,10 @@ int main()
     cin >> aux;
     x.setAno(aux);
 
-    //************************
-
-    cout << endl << "*** Data 1 *** "<< endl;
+    cout << endl << "*** Data *** "<< endl;
     cout << "" << x.getDia()<< "/"<< x.getMes()<< ""<< "/"<< x.getAno()<< endl;
     cout << "Avancando um dia ... " << endl;
     x.avancarDia();
 
-
-
+    return 0;
 }
